@@ -39,7 +39,7 @@ sarvam-voice-agent/
 ### Prerequisites
 
 - A [Sarvam AI](https://www.sarvam.ai/) API key
-- A [Databricks](https://www.databricks.com/) workspace (Azure Central India recommended for data sovereignty)
+- A [Databricks](https://www.databricks.com/) workspace 
 - Databricks CLI installed (`pip install databricks-cli`)
 
 ### 1. Clone and configure
@@ -86,14 +86,7 @@ python app.py
 
 Open http://localhost:8000
 
-## Optional: Self-host Sarvam-30B on Databricks
 
-For full data sovereignty (no external API calls), deploy Sarvam-30B on Databricks Model Serving:
-
-1. Open `01_deploy_sarvam_model.py` as a notebook in your Databricks workspace
-2. Run it on a GPU cluster (A100 recommended)
-3. It will register Sarvam-30B in Unity Catalog and create a serving endpoint
-4. The app automatically uses the Databricks endpoint when available, falling back to Sarvam API
 
 ## How It Works
 
