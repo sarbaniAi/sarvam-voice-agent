@@ -1,0 +1,9 @@
+command:
+  - python
+  - app.py
+
+env:
+  - name: SARVAM_API_KEY
+    value: "your-sarvam-api-key-here"
+  - name: SARVAM_ENDPOINT_NAME
+    value: "sarvam-30b-serving"
